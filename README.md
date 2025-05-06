@@ -9,8 +9,6 @@ This is a simple Flutter-based ID application created purely for learning purpos
 
 ## Installation
 
-To get started with this project on your local machine, follow these steps:
-
-1. Clone the repository:
+To get started with this project on your local machine, clone this repository:
    ```bash
    git clone https://github.com/your-username/flutter-id-app.git
