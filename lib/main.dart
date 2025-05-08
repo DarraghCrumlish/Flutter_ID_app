@@ -1,28 +1,83 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MaterialApp(
-  home: id_card()
+  home: IdCard()
 ));
-class id_card extends StatelessWidget {
-  const id_card({super.key});
+class IdCard extends StatelessWidget {
+  const IdCard({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('this is an Appbar'),
+        title: const Text('ID'),
         centerTitle: true,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
       ),
-      body: const Padding(
-          padding: EdgeInsets.all(40),
+      body: Container(
+          padding: const EdgeInsets.all(40),
+          color: Colors.grey[850],
           child: Column(
             children: <Widget>[
-              Text('NAME:'),
-              Text('AGE:'),
-              Text('GENDER')
-            ],
-          )
+              const SizedBox(height: 250,),
+              Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.values[3],
+                    children: const <Widget>[
+                      Text('NAME:',style: TextStyle(color: Colors.grey, letterSpacing: 2,fontSize: 25)),
+                      Text('Darragh Crumlish', style: TextStyle(color: Colors.amber, letterSpacing: 1,fontSize: 25,fontWeight: FontWeight.bold))
+                    ],
+                  ),
+                  const SizedBox(height: 30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.values[3],
+                    children: const <Widget>[
+                    Text('AGE:',style: TextStyle(color: Colors.grey, letterSpacing: 2,fontSize: 25)),
+                    Text('17', style: TextStyle(color: Colors.amber, letterSpacing: 1, fontSize: 25, fontWeight: FontWeight.bold))
+                    ],
+                  ),
+                  const SizedBox(height: 30),
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.values[3],
+                      children: const <Widget>[
+                        Text('GENDER:',style: TextStyle(color: Colors.grey, letterSpacing: 2, fontSize: 25)),
+                        Text('MALE', style: TextStyle(color: Colors.amber, letterSpacing: 1, fontSize: 25,fontWeight: FontWeight.bold))
+                      ]
+                  ),
+                ]
+              ),
+              const SizedBox(height: 250,),
+              const Column(
+                mainAxisAlignment: MainAxisAlignment.end ,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.email,color: Colors.white,),
+                      SizedBox(width: 10,),
+                      Text('crumlishdarragh@gmail.com',style: TextStyle(color: Colors.grey, letterSpacing: 2,fontSize: 20)),
+                    ],
+                  ),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.phone,color: Colors.green,),
+                      SizedBox(width: 10,),
+                      Text('+353 83-373-6630',style: TextStyle(color: Colors.grey, letterSpacing: 2,fontSize: 20)),
+                    ],
+                  ),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.snapchat,color: Colors.yellow,),
+                      SizedBox(width: 10,),
+                      Text('@darraghcrumlish',style: TextStyle(color: Colors.grey, letterSpacing: 2,fontSize: 20)),
+                    ],
+                  )
+                ],
+              )
+            ]
+          ),
       )
     );
   }
