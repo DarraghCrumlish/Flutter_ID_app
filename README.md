@@ -6,9 +6,3 @@ This is a simple Flutter-based ID application created purely for learning purpos
 - Display user ID and information.
 - Simple, easy-to-use interface.
 - Designed to explore Flutter's capabilities and best practices.
-
-## Installation
-
-To get started with this project on your local machine, clone this repository:
-   ```bash
-   git clone https://github.com/DarraghCrumlish/Flutter_ID_app.git
