@@ -23,7 +23,10 @@ class IdCard extends StatelessWidget {
                 backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s'),
                 radius: 100,
               ),
-              const SizedBox(height: 100,),
+              const Divider(
+                height: 100,
+                color: Colors.red,
+              ),
               Column(
                 children: <Widget>[
                   Row(
