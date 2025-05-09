@@ -19,7 +19,11 @@ class IdCard extends StatelessWidget {
           color: Colors.grey[850],
           child: Column(
             children: <Widget>[
-              const SizedBox(height: 250,),
+              const CircleAvatar(
+                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s'),
+                radius: 100,
+              ),
+              const SizedBox(height: 100,),
               Column(
                 children: <Widget>[
                   Row(
@@ -47,7 +51,7 @@ class IdCard extends StatelessWidget {
                   ),
                 ]
               ),
-              const SizedBox(height: 250,),
+              const SizedBox(height: 150,),
               const Column(
                 mainAxisAlignment: MainAxisAlignment.end ,
                 children: <Widget>[
